@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Riddle 3</title>
+<style>
+body{text-align:center;font-family:Arial;background:#fce4ec;padding:40px;}
+input,button{padding:10px;font-size:16px;margin-top:10px;}
+button{background:#e91e63;color:white;border:none;border-radius:5px;}
+</style>
+</head>
+<body>
+<h2>Riddle 3</h2>
+<p>What has a heart but no other organs?</p>
+<input type="text" id="answer">
+<br>
+<button onclick="check()">Submit</button>
+
+<script>
+function check(){
+let ans=document.getElementById("answer").value.toLowerCase();
+if(ans==="deck"){
+window.location="riddle4.html";
+}else{
+alert("Wrong answer! Try again.");
+}
+}
+</script>
+</body>
+</html>
