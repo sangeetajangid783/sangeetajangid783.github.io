@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Final Riddle</title>
+<style>
+body{text-align:center;font-family:Arial;background:#fbe9e7;padding:40px;}
+input,button{padding:10px;font-size:16px;margin-top:10px;}
+button{background:#ff5722;color:white;border:none;border-radius:5px;}
+</style>
+</head>
+<body>
+<h2>Final Riddle</h2>
+<p>I am not alive, but I grow. I don’t have lungs, but I need air. What am I?</p>
+<input type="text" id="answer">
+<br>
+<button onclick="check()">Submit</button>
+
+<script>
+function check(){
+let ans=document.getElementById("answer").value.toLowerCase();
+if(ans==="fire"){
+alert("🎉 Congratulations! You completed the Riddle Game!");
+window.location="index.html";
+}else{
+alert("Wrong answer! Try again.");
+}
+}
+</script>
+</body>
+</html>
